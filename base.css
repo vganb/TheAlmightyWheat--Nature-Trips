@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: orange;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}/*# sourceMappingURL=base.css.map */

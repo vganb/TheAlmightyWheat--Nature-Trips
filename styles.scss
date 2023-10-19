@@ -1,0 +1,104 @@
+@import "variables";
+@import "base";
+
+.header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  &__title {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__nav {
+    // border: 1px solid pink;
+    display: flex;
+    flex: 1;
+    line-height: 2;
+    justify-content: center;
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      &__item {
+        list-style: none;
+        text-decoration: none;
+        &__link {
+          font-weight: 600;
+          text-decoration: none;
+          color: $textColor;
+        }
+      }
+    }
+  }
+}
+
+a:hover {
+  text-decoration: underline 2px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: $btnColor;
+  color: $btnTextColor;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $btnHoverColor;
+}
+/* Hero */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  text-align: center;
+  align-items: center;
+  &__item {
+    display: flex;
+    height: 300px;
+    width: 65%;
+    text-align: center;
+    &__image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+  }
+  &__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  &__description {
+    font-size: 1rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 15px;
+  justify-content: center;
+  padding: 2rem 0;
+  &__item {
+    width: 30%;
+    height: auto;
+    border: 1px solid $btnHoverColor;
+    text-align: center;
+    border-radius: 1rem;
+    &__image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+}

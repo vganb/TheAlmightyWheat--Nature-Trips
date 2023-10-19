@@ -1,0 +1,74 @@
+@import "variables";
+@import "base";
+
+.container {
+  width: 70%;
+  padding: 5rem;
+  justify-content: center;
+}
+
+.header__contact__nav {
+  display: flex;
+  flex: 1;
+  line-height: 2;
+  justify-content: center;
+  &__menu {
+    display: flex;
+    gap: 5rem;
+    &__item {
+      list-style: none;
+      &__link {
+        font-weight: 600;
+        text-decoration: none;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+a:hover {
+  text-decoration: underline 2px;
+}
+
+.form {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+label {
+  display: flex;
+}
+input {
+  display: flex;
+  width: 100%;
+  min-width: 10rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+}
+
+textarea {
+  border-radius: 0.5rem;
+  padding: 0 0 0 0.9rem;
+}
+.btn {
+  text-decoration: none;
+  margin: 2rem auto;
+  width: 10rem;
+  font-size: 1rem;
+  display: inline-block;
+  background-color: $btnColor;
+  color: $btnTextColor;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: $btnHoverColor;
+}
