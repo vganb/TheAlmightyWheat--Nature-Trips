@@ -1,17 +1,18 @@
 @import "variables";
 @import "base";
+@import "breakpoints";
 
 .header__about {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   &__title {
-    /* display: flex; */
+    // display: flex;
     font-size: 2.8rem;
     letter-spacing: -1.5px;
     text-transform: uppercase;
-    text-align: left;
+    // text-align: left;
   }
   &__nav {
     display: flex;
@@ -29,14 +30,13 @@
           font-weight: 600;
           text-decoration: none;
           color: $textColor;
+          &:hover {
+            text-decoration: underline 2px;
+          }
         }
       }
     }
   }
-}
-
-a:hover {
-  text-decoration: underline 2px;
 }
 
 /*  main */

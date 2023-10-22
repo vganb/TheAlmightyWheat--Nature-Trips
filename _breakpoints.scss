@@ -1,0 +1,155 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 410px,
+  "md": 810px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+.header {
+  @include md {
+    color: $textColor;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.header__nav__menu {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    // border: 1px solid black;
+  }
+}
+
+.header__nav__menu__item {
+  @include sm {
+    width: 100%;
+    border: 1px solid $btnHoverColor;
+    text-align: center;
+    line-height: 2rem;
+    &:hover {
+      text-decoration: underline 2px;
+      background-color: #87856f;
+    }
+  }
+}
+
+.header__about__nav__menu {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    // align-items: center;
+    // text-align: center;
+  }
+}
+
+.header__about__nav__menu__item {
+  @include sm {
+    width: 100%;
+    border: 1px solid $btnHoverColor;
+    text-align: center;
+    &:hover {
+      text-decoration: underline 2px;
+      background-color: #87856f;
+    }
+  }
+}
+
+.main__about__team__container {
+  @include md {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main__about__ceo {
+  @include md {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.header__event__nav__menu {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    // border: 1px solid black;
+  }
+}
+
+.header__event__nav__menu__item {
+  @include sm {
+    width: 100%;
+    border: 1px solid $btnHoverColor;
+    text-align: center;
+    line-height: 2rem;
+    &:hover {
+      text-decoration: underline 2px;
+      background-color: #87856f;
+    }
+  }
+}
+
+.header__contact__nav__menu {
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    // border: 1px solid black;
+  }
+}
+
+.header__contact__nav__menu__item {
+  @include sm {
+    width: 100%;
+    border: 1px solid $btnHoverColor;
+    text-align: center;
+    line-height: 2rem;
+    &:hover {
+      text-decoration: underline 2px;
+      background-color: #87856f;
+    }
+  }
+}

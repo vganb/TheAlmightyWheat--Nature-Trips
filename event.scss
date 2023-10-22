@@ -1,5 +1,6 @@
 @import "variables";
 @import "base";
+@import "breakpoints";
 
 .header {
   &__event {
@@ -58,6 +59,9 @@ a:hover {
       /* flex: 1; */
       max-width: 300px;
       max-height: 250px;
+      &:hover {
+        transform: scale(1.1);
+      }
       &__image {
         height: 250px;
         width: 100%;

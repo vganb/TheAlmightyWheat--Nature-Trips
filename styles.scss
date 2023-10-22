@@ -1,5 +1,6 @@
 @import "variables";
 @import "base";
+@import "breakpoints";
 
 .header {
   padding: 1rem;
@@ -22,7 +23,6 @@
     justify-content: center;
     &__menu {
       display: flex;
-      flex-direction: row;
       gap: 2rem;
       &__item {
         list-style: none;
@@ -31,14 +31,13 @@
           font-weight: 600;
           text-decoration: none;
           color: $textColor;
+          &:hover {
+            text-decoration: underline 2px;
+          }
         }
       }
     }
   }
-}
-
-a:hover {
-  text-decoration: underline 2px;
 }
 
 .btn {
@@ -51,9 +50,9 @@ a:hover {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: $btnHoverColor;
-}
+// button:hover {
+//   background-color: $btnHoverColor;
+// }
 /* Hero */
 
 .hero {
@@ -89,8 +88,8 @@ button:hover {
   justify-content: center;
   padding: 2rem 0;
   &__item {
-    width: 30%;
-    height: auto;
+    width: 280px;
+    height: 400px;
     border: 1px solid $btnHoverColor;
     text-align: center;
     border-radius: 1rem;
